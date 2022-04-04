@@ -22,8 +22,6 @@ a{ text-decoration: none;}
     z-index: 1;
     font-size: 2rem;
     text-align: center;
-    /* padding: 10px 0px; */
-    /* padding: 10px 90px 20px; */
     border: 4px solid orange;
     color:white;
     text-transform: uppercase;
@@ -200,7 +198,7 @@ a{ text-decoration: none;}
 
 /* End Header section*/
 
-/* this is the start hero section */
+/* video section */
 /* this is the .container in the video  */
 .hero-container, .about-container{
     position: absolute;
@@ -213,55 +211,6 @@ a{ text-decoration: none;}
     
    
 }
-/* .about-container{
-    position: absolute;
-    z-index: 1;
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-.contact-container{
-    position: absolute;
-    z-index: 1;
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* margin-bottom: 20%; */
-}
-
-
-#projects .projects-container {
-    position: absolute;
-    z-index: 1;
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-#projects .projects-container {
-    position: absolute;
-    display:flex;
-    text-align: center;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 100px 10px;
-    box-sizing: content-box;
-    /* align-items: center; */
-    justify-content: center;
-    /* padding-top: 50%; */
-    padding-left: 20%;
-    padding-bottom: 10%;
-    /* flex-direction: row; */
-    border: none;
-}
-
 
 .video-container {
     position: relative;
@@ -271,7 +220,6 @@ a{ text-decoration: none;}
     height: 120vh;
     overflow: hidden;
     display: flex;
-    /* overflow-y: visible; */
    
 }
 
@@ -279,7 +227,6 @@ a{ text-decoration: none;}
     position: relative;
     top: 0;
     left: 0;
-    /* bottom: 30%; */
     width: 100%;
     height: 129vh;
     margin-top: 5%;
@@ -288,48 +235,19 @@ a{ text-decoration: none;}
   
 }
 
-/* .video-container3 {
+.video-container3 {
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
-    height: 130vh;
+    height: 110vh;
     display: flex;
     overflow: hidden;
-    margin-top: 1%;
+    margin-top: -20%;
    
-} */
-
-/* .video-container4 {
-    position: absolute;
-    height: 120vh;
-    width: 100%;
-    display: flex;
-    
-   
-} */
-
-#contact {
-    width: 100%;
-    /* height: h; */
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    overflow: hidden; /* keeps the video not expanding */
-    z-index: auto;
 }
 
-#contact .contact-container {
-    position: absolute;
-    z-index: 1;
-    height: 100vh;
-    flex-direction: column;
-    width: 100%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
+/* End of video section */
 
 
 
@@ -425,28 +343,21 @@ p {
 
 #about {
     position: relative;
-    /* top: 0; */
-    /* left: 0; */
     width: 100%;
     height: 100vh;
-   
     display: flex;
     width: 100%;
     height: 120vh;
-    
     align-items: center; 
     justify-content: center;
-    /* z-index: auto;  */
 }
 
 #about .about-container{
     text-align: center;
-    /* height: 10vh; */
     bottom: 20%;
 
 }
 
-/* xxxxxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxxxxxxx xxxxxxxxxx */
 
 #about .col-right h1{
     padding: 5px 0;
@@ -473,17 +384,19 @@ p {
 /* Projects Section */
 
 #projects .projects-container{
-    flex-direction: column; 
     max-width: 900px;
-    margin: 0 auto;
-    margin-top: 10%;
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: content-box;
+    padding: 100px 10px;
+    padding-left: 20%;
 
 }
 
 #projects .all-projects{
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 
 }
@@ -500,7 +413,7 @@ p {
 
 #projects .project-info {
     padding: 30px;
-    flex-basis: 50%;
+    flex-basis: 40%;
     display: flex;
     align-items:flex-start;
     justify-content: center;
@@ -508,9 +421,12 @@ p {
     background-color: rebeccapurple;
    
 }
+
+
+
 #projects .project-info h1 {
     font-size: 4rem;
-    font-weight: 500;
+    font-weight: 200;
 }
 
 #projects .project-info h2{
@@ -581,25 +497,58 @@ p {
 
 
 /* contact info */
-#contact .contact-container{
-    top: 510%;
-}
 
-
-#contact .contact-container .contact-items{
-    width: 40%;
-}
-
-
-#contact .contact-container .contact-item{
+#contact {
     width: 100%;
-    padding: 10px;
-    text-align: center;
-    padding: 30px;
-    margin: 5px;
     display: flex;
+    align-items: center; 
     justify-content: center;
+    overflow: hidden; 
+    z-index: auto;
+    margin-top: 2400px
+}
+
+
+.contact-container {
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    flex-direction: column;
+    width: 100%;
+    display:flex;
     align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    top: 4000px;
+}
+
+#contact .contact-container{
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+    padding: 100px 0;
+    padding-bottom: 300px ;
+
+}
+
+
+#contact .contact-items{
+    width: 28%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px;
+
+}
+
+
+#contact .contact-item{
+    width: 20%;
+    margin: 0 ;
+    flex-direction: row;
     transition: .3s ease box-shadow;
 
 }
@@ -608,24 +557,20 @@ p {
     box-shadow: 0px 0px 10px 10px orange;
    
 }
-
-
 /* contact info ends */
+
 
 /* Footer */
 #footer{ 
-    /* position: relative; */
     background-color: #29323c;
     text-align: center;
-    margin-top: 198%;
-    /* z-index: auto; */
-    
 }
+
 #footer .footer-container{
     min-height: 10px;
     flex-direction: column;
     padding-top: 2px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     
 }
 
@@ -673,7 +618,7 @@ p {
 }
 
 /* Media Query For Tablet */
-@media only screen and (min-width:768px){
+@media only screen and (min-width: 1200px){
     /* header */
     #header .hamburger {
         display: none;
@@ -700,9 +645,11 @@ p {
     }
     /* End header */
     
-    
+}    
+
+@media only screen and (min-width: 768px){
     .cta{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         padding: 20px 60px;
     }
 
@@ -721,7 +668,7 @@ p {
 
     #projects .project-item {
         flex-direction: row;
-        margin-bottom: 10%;
+        /* margin-bottom: 10%; */
     }
 
     #projects .project-item:nth-child(even){
@@ -729,17 +676,17 @@ p {
     }
 
     #projects .project-item{
-        height: 450px;
+        height: 400px;
         margin: 0;
         width: 100%;
-        border-radius: 0;
+        /* border-radius: 0; */
         /* max-width: 0 auto; */
     }
    #projects .all-projects .project-info{
-       height: 100%;
+       height: 90%;
    }
    #projects .all-projects .project-img{
-       height: 100%;
+       height: 90%;
    }
    
    #projects .all-projects .containerRV{
@@ -747,7 +694,7 @@ p {
    }
 
    #projects .all-projects .box{
-       height: 100%;
+       height: 90%;
    }        
     /* End of Projects */
 
@@ -783,9 +730,6 @@ p {
         text-decoration: none;
     }
 
-
-
-
    #about .col-right{
        width: 600px;
        height: 500px;
@@ -793,8 +737,8 @@ p {
    }
 
   
-
+}
    /* End About */
 
-}
+
 /* End Media Query For Tablet */
